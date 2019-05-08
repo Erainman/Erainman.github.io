@@ -8,6 +8,18 @@
     <style>
       /* YOUR STYLE GOES HERE */
       /* 不得改变页面的任何html结构 */
+      body>p:first-child{
+        color:red;
+      }
+      p.a.c>span{
+        color: red;
+      }
+      p.a.c>span>span:first-child{
+        color: green;
+      }
+      p.a.c>span>span:last-child{
+        color: blue;
+      }
       a:visited{
         color: orange;
       }
@@ -64,6 +76,17 @@
 
     <p class="a" tabindex="-1">鼠标悬浮时为红色，按下去时为绿色，获得焦点时为蓝色</p>
 
+    <style>
+        p.a.c>span{
+          color: red;
+        }
+        p.a.c>span>span:first-child{
+          color: green;
+        }
+        p.a.c>span>span:last-child{
+          color: blue;
+        }
+    </style>
     <p class="a c">
       <span>
         红色
