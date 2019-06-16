@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+	<style>
+		    div {
+			height: 200px;
+			width: 200px;
+			background-color: pink;
+			border:1px solid;
+			margin:20px;
+				}
+    div.a {
+    	text-align:center;
+    }
+    div.a span{
+    	line-height: 200px;
+    }
+    
+    div.b {
+    	display:table;
+    	text-align:center;
+    	
+    }
+    div.b span{
+    	display:table-cell;
+    	vertical-align:middle;
+    }
+    
+    div.c {
+    	position: relative;
+    }
+    
+    .c span {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%,-50%);
+    }
+    .d {
+      position: relative;
+    }
+    .d1 {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+    }
+    .d1 >  span {
+      display: block;
+      margin-left:-50% ;
+      margin-top: -50%;
+    }
+    .e {
+      position: relative;  
+    }
+    .e > div {
+      display: block;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+
+	</style>
+</head>
+<body>
+    <p>行间距法</p>
+	<div class="a"><span>aaa</span></div>
+    <p>表格块法</p>
+	<div class="b"><span>bbb</span></div>
+	<p>负位移法</p>
+    <div class="c"><span>ccc</span></div>
+  	<p>负外边距法</p>
+  	<div class="d">
+      <span class="d1"><span>ddd</span></span>
+    </div>
+    <p>快的绝对居中</p>
+    <div class="e"><div>eee</div></div>
+
+
+</body>
+</html>
