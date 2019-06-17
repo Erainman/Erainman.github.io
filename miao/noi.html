@@ -21,7 +21,7 @@
   let a = +prompt("请输入第一个数字","");
   let b = +prompt("请输入第二个数字","");
   let c = +prompt("请输入第二个数字","");
-  console.log((a + b)/c);
+  console.log(Math.floor((a + b)/c));
   })();
 </script>
 
@@ -40,7 +40,7 @@
   (function(){
   let a = +prompt("请输入除数","");
   let b = +prompt("请输入被除数","");
-  console.log(a/b);
+  console.log((a/b).toFixed(9));
   })();
 </script>
 
@@ -49,7 +49,7 @@
   (function(){
   let a = +prompt("确诊数","");
   let b = +prompt("死亡数","");
-  console.log((b/a).toFixed(3)*100,"%");
+  console.log(((b/a)*100).toFixed(3)+"%");
   })();
 </script>
 
@@ -62,7 +62,7 @@
   let c = +prompt("");
   let d = +prompt("");
   let x = +prompt("");
-  console.log(a*x**3+b*x**2+c*x+d)
+  console.log((a*x**3+b*x**2+c*x+d).toFixed(7))
   })();
 </script>
 
@@ -70,7 +70,7 @@
 <script id="ch0103/08">
   (function(){
   let a = +prompt("华氏温度","");
-  console.log(5*(a-32)/9);
+  console.log((5*(a-32)/9).toFixed(5));
   })();
 </script>
 
@@ -79,7 +79,7 @@
 <script id="ch0103/09">
   (function(){
   let a = +prompt("半径","");
-  console.log(2*a,2*Math.PI*a,Math.PI*a**2);
+  console.log((2*a,2*Math.PI*a,Math.PI*a**2).toFixed(4));
   })();
 </script>
 
@@ -106,15 +106,16 @@
 <script id="ch0103/12">
   (function(){
   let a = +prompt("半径","");
-  console.log(4/3*3.14*a**3);
+  console.log((4/3*3.14*a**3).toFixed(2));
   })();
 </script>
 
 
 <script id="ch0103/13">
   (function(){
-  let a = +prompt("","");
-  console.log(a.split('').reverse().join(''));
+  let a = prompt("","");
+  a.split('').reverse().join('');
+  console.log(+a);
   })();
 </script>
 
@@ -143,7 +144,7 @@
   let ya = +prompt("","");
   let xb = +prompt("","");
   let yb = +prompt("","");
-  console.log((Math.sqrt((xa-ya)**2-(xb-yb)**2)).Math.toFixed(3));
+  console.log((Math.sqrt((xa-xb)**2-(ya-yb)**2)).Math.toFixed(3));
   })();
 </script>
 
@@ -160,7 +161,7 @@
   let b=(Math.sqrt((xa-za)**2-(xb-zb)**2)).Math.toFixed(3);
   let c=(Math.sqrt((za-ya)**2-(zb-yb)**2)).Math.toFixed(3);
   let p = (a+b+c)/2
-  console.log(Math.sqrt(p*(p-a)*(p-b)*(p-c)));
+  console.log((Math.sqrt(p*(p-a)*(p-b)*(p-c))).toFixed(2));
   })();
 </script>
 
@@ -335,8 +336,10 @@
   let a = +prompt("办事距离","");
   if(a/3+50 > a/1.2)
   console.log("Bike");
+  else if(a/3+50 === a/1.2)
+  console.log("All");
   else
-  console.log("Walk")
+  console.log("Walk");
   })();
 </script>
 
@@ -366,7 +369,7 @@
     m = 8 + Math.ceil((a - 1000)/500)*4;
   if(b === "y")
     m += 5;
-  console.log(m);
+  console.log(m.toFixed(3));
   })();
 </script>
 
@@ -395,7 +398,7 @@
 
 <script id="ch0104/17">
   (function(){
-  let xa = +prompt("","");
+  let n = +prompt("","");
   if((n%4 == 0 && n%100 != 0) || n %400 == 0)
     console.log("Y");
   else
@@ -446,11 +449,11 @@
   let c = +prompt("","");
   let x1,x2;
   if(b2 === 4 * a * c){
-    console.log("x1=x2=",(-b + sqrt(b*b-4*a*c))/(2*a))
+    console.log("x1=x2="+((-b + sqrt(b*b-4*a*c))/(2*a)).toFixed(5))
   }else if (b2 > 4 * a * c)
-  console.log("x1=",(-b + sqrt(b*b-4*a*c))/(2*a),";","x2=","(-b - sqrt(b*b-4*a*c))/(2*a)");
+  console.log("x1="+(-b + (sqrt(b*b-4*a*c))/(2*a)).toFixed(5)+";"+"x2="+(-b - (sqrt(b*b-4*a*c))/(2*a)).toFixed(5));
   else
-  console.log("x1=", -b / (2*a),"+",sqrt(4*a*c-b*b) / (2*a),"i",";","x2=", -b / (2*a),"-",sqrt(4*a*c-b*b) / (2*a),"i");
+  console.log("x1="+ (-b / (2*a)).toFixed(5)+"+"+(sqrt(4*a*c-b*b) / (2*a)).toFixed(5)+"i"+";"+"x2="+ (-b / (2*a)).toFixed(5)+"-"+(sqrt(4*a*c-b*b) / (2*a)).toFixed(5)+"i");
   })();
 </script> 
 
@@ -462,5 +465,71 @@
   let y = +prompt("","");
   console.log(n-Math.ceil(y/x));
   })();
-</script> 
+</script>
 
+<script id="ch0105/01">
+  (function(){
+  let a = +prompt("人数",""),s = 0;
+    for(let i=0;i < a;i++){
+      s += +prompt("");
+    }
+    console.log((s/a).toFixed(2));
+  })();
+</script>
+
+
+<script id="ch0105/02">
+  (function(){
+  let s = 0;
+    for(let i=0;i < 12;i++){
+      s += +prompt("");
+    }
+    console.log((s/12).toFixed(2));
+  })();
+</script>
+
+
+  <script id="ch0105/03">
+    (function(){
+      let a = +prompt("输入数量n","");
+      let b = prompt("输入数据，以空格隔开","");
+      let arr = b.split(" ").map(Number);
+      console.log(arr.reduce((prev,cur)=>prev + cur)/a);
+    })();
+  </script>
+
+
+<script id="ch0105/04">
+  (function(){
+  let a = +prompt("整数n",""),s = 0;
+    for(let i=0;i < a;i++){
+      s += +prompt("");
+    }
+    console.log(s," ",(s/a).toFixed(5));
+  })();
+</script>
+
+<script id="ch0105/05">
+  (function(){
+  let a = +prompt("整数n",""),s = 0;
+    for(let i=0;i < a;i++){
+      s =Math.max(s,+prompt(""));
+    }
+    console.log(s);
+  })();
+</script>
+
+
+<script id="ch0105/06">
+  (function(){
+      let a = +prompt("输入数量n","");
+      let b = prompt("输入数据，以空格隔开","");
+      let arr = b.split(" ").map(Number),max = 0; min = 1000;
+      arr.forEach((items,index,arr)=>{
+        max = Math.max(max,items);
+        min = Math.min(min,items); 
+      })
+      console.log(max-min);
+    })();
+</script>
+ 
