@@ -81,7 +81,7 @@
 <script id="ch0103/09">
   (function () {
     let a = +prompt("半径", "");
-    console.log(((2 * a).toFixed(4) , (2 * 3.14159 * a).toFixed(4), 3.14159 * a ** 2).toFixed(4));
+    console.log((2 * a).toFixed(4) , (2 * 3.14159 * a).toFixed(4), (3.14159 * a ** 2).toFixed(4));
   })();
 </script>
 
@@ -158,9 +158,9 @@
     let yb = +prompt("", "");
     let za = +prompt("", "");
     let zb = +prompt("", "");
-    let a = (Math.sqrt((xa - ya) ** 2 - (xb - yb) ** 2)).toFixed(3);
-    let b = (Math.sqrt((xa - za) ** 2 - (xb - zb) ** 2)).toFixed(3);
-    let c = (Math.sqrt((za - ya) ** 2 - (zb - yb) ** 2)).toFixed(3);
+    let a = (Math.sqrt((xa - ya)*(xa - ya) + (xb - yb)*(xb - yb))).toFixed(3);
+    let b = (Math.sqrt((xa - za)*(xa - za) + (xb - zb)*(xb - zb))).toFixed(3);
+    let c = (Math.sqrt((za - ya)*(za - ya) + (zb - yb)*(zb - yb))).toFixed(3);
     let p = (a + b + c) / 2
     console.log((Math.sqrt(p * (p - a) * (p - b) * (p - c))).toFixed(2));
   })();
