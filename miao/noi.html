@@ -1,519 +1,521 @@
+
+
 <script id="ch0103/01">
-  (function(){
-  let a = +prompt("请输入第一个数字","");
-  let b = +prompt("请输入第二个数字","");
-  console.log(a + b);
+  (function () {
+    let a = +prompt("请输入第一个数字", "");
+    let b = +prompt("请输入第二个数字", "");
+    console.log(a + b);
   })();
 </script>
 
 <script id="ch0103/02">
-  (function(){
-  let a = +prompt("请输入第一个数字","");
-  let b = +prompt("请输入第二个数字","");
-  let c = +prompt("请输入第二个数字","");
-  console.log((a + b)*c);
+  (function () {
+    let a = +prompt("请输入第一个数字", "");
+    let b = +prompt("请输入第二个数字", "");
+    let c = +prompt("请输入第二个数字", "");
+    console.log((a + b) * c);
   })();
 </script>
 
 
 <script id="ch0103/03">
-  (function(){
-  let a = +prompt("请输入第一个数字","");
-  let b = +prompt("请输入第二个数字","");
-  let c = +prompt("请输入第二个数字","");
-  console.log(Math.floor((a + b)/c));
+  (function () {
+    let a = +prompt("请输入第一个数字", "");
+    let b = +prompt("请输入第二个数字", "");
+    let c = +prompt("请输入第二个数字", "");
+    console.log(Math.floor((a + b) / c));
   })();
 </script>
 
 
 <script id="ch0103/04">
-  (function(){
-  let a = +prompt("请输入除数","");
-  let b = +prompt("请输入被除数","");
-  console.log(Math.floor(a/b));
-  console.log(a%b);
+  (function () {
+    let a = +prompt("请输入除数", "");
+    let b = +prompt("请输入被除数", "");
+    console.log(Math.floor(a / b));
+    console.log(a % b);
   })();
 </script>
 
 
 <script id="ch0103/05">
-  (function(){
-  let a = +prompt("请输入除数","");
-  let b = +prompt("请输入被除数","");
-  console.log((a/b).toFixed(9));
+  (function () {
+    let a = +prompt("请输入除数", "");
+    let b = +prompt("请输入被除数", "");
+    console.log((a / b).toFixed(9));
   })();
 </script>
 
 
 <script id="ch0103/06">
-  (function(){
-  let a = +prompt("确诊数","");
-  let b = +prompt("死亡数","");
-  console.log(((b/a)*100).toFixed(3)+"%");
+  (function () {
+    let a = +prompt("确诊数", "");
+    let b = +prompt("死亡数", "");
+    console.log(((b / a) * 100).toFixed(3) + "%");
   })();
 </script>
 
 
 
 <script id="ch0103/07">
-  (function(){
-  let a = +prompt("");
-  let b = +prompt("");
-  let c = +prompt("");
-  let d = +prompt("");
-  let x = +prompt("");
-  console.log((a*x**3+b*x**2+c*x+d).toFixed(7))
+  (function () {
+    let a = +prompt("");
+    let b = +prompt("");
+    let c = +prompt("");
+    let d = +prompt("");
+    let x = +prompt("");
+    console.log((a * x ** 3 + b * x ** 2 + c * x + d).toFixed(7))
   })();
 </script>
 
 
 <script id="ch0103/08">
-  (function(){
-  let a = +prompt("华氏温度","");
-  console.log((5*(a-32)/9).toFixed(5));
+  (function () {
+    let a = +prompt("华氏温度", "");
+    console.log((5 * (a - 32) / 9).toFixed(5));
   })();
 </script>
 
 
 
 <script id="ch0103/09">
-  (function(){
-  let a = +prompt("半径","");
-  console.log((2*a,2*Math.PI*a,Math.PI*a**2).toFixed(4));
+  (function () {
+    let a = +prompt("半径", "");
+    console.log((2 * a, 2 * Math.PI * a, Math.PI * a ** 2).toFixed(4));
   })();
 </script>
 
 
 <script id="ch0103/10">
-  (function(){
-  let a = +prompt("电阻值1","");
-  let b = +prompt("电阻值2","");
-  console.log((1/(1/a + 1/b)).toFixed(2));
+  (function () {
+    let a = +prompt("电阻值1", "");
+    let b = +prompt("电阻值2", "");
+    console.log((1 / (1 / a + 1 / b)).toFixed(2));
   })();
 </script>
 
 
 
 <script id="ch0103/11">
-  (function(){
-  let a = +prompt("","");
-  let b = +prompt("","");
-  console.log((a%b).toFixed(4));
+  (function () {
+    let a = +prompt("", "");
+    let b = +prompt("", "");
+    console.log((a % b).toFixed(4));
   })();
 </script>
 
 
 <script id="ch0103/12">
-  (function(){
-  let a = +prompt("半径","");
-  console.log((4/3*3.14*a**3).toFixed(2));
+  (function () {
+    let a = +prompt("半径", "");
+    console.log((4 / 3 * 3.14 * a ** 3).toFixed(2));
   })();
 </script>
 
 
 <script id="ch0103/13">
-  (function(){
-  let a = prompt("","");
-  a.split('').reverse().join('');
-  console.log(+a);
+  (function () {
+    let a = prompt("", "");
+    a.split('').reverse().join('');
+    console.log(+a);
   })();
 </script>
 
 
 <script id="ch0103/14">
-  (function(){
-  let h = +prompt("深","");
-  let r = +prompt("底面半径","");
-  console.log(Math.ceil(20/(3.14159*r*r*h/1000)));
+  (function () {
+    let h = +prompt("深", "");
+    let r = +prompt("底面半径", "");
+    console.log(Math.ceil(20 / (3.14159 * r * r * h / 1000)));
   })();
 </script>
 
 <script id="ch0103/15">
-  (function(){
-  let n = +prompt("","");
-  let x = +prompt("","");
-  let y = +prompt("","");
-  console.log(n-Math.ceil(y/x));
+  (function () {
+    let n = +prompt("", "");
+    let x = +prompt("", "");
+    let y = +prompt("", "");
+    console.log(n - Math.ceil(y / x));
   })();
 </script>
 
 
 <script id="ch0103/16">
-  (function(){
-  let xa = +prompt("","");
-  let ya = +prompt("","");
-  let xb = +prompt("","");
-  let yb = +prompt("","");
-  console.log((Math.sqrt((xa-xb)**2-(ya-yb)**2)).Math.toFixed(3));
+  (function () {
+    let xa = +prompt("", "");
+    let ya = +prompt("", "");
+    let xb = +prompt("", "");
+    let yb = +prompt("", "");
+    console.log((Math.sqrt((xa - xb) ** 2 - (ya - yb) ** 2)).Math.toFixed(3));
   })();
 </script>
 
 
 <script id="ch0103/17">
-  (function(){
-  let xa = +prompt("","");
-  let ya = +prompt("","");
-  let xb = +prompt("","");
-  let yb = +prompt("","");
-  let za = +prompt("","");
-  let zb = +prompt("","");
-  let a=(Math.sqrt((xa-ya)**2-(xb-yb)**2)).Math.toFixed(3);
-  let b=(Math.sqrt((xa-za)**2-(xb-zb)**2)).Math.toFixed(3);
-  let c=(Math.sqrt((za-ya)**2-(zb-yb)**2)).Math.toFixed(3);
-  let p = (a+b+c)/2
-  console.log((Math.sqrt(p*(p-a)*(p-b)*(p-c))).toFixed(2));
+  (function () {
+    let xa = +prompt("", "");
+    let ya = +prompt("", "");
+    let xb = +prompt("", "");
+    let yb = +prompt("", "");
+    let za = +prompt("", "");
+    let zb = +prompt("", "");
+    let a = (Math.sqrt((xa - ya) ** 2 - (xb - yb) ** 2)).Math.toFixed(3);
+    let b = (Math.sqrt((xa - za) ** 2 - (xb - zb) ** 2)).Math.toFixed(3);
+    let c = (Math.sqrt((za - ya) ** 2 - (zb - yb) ** 2)).Math.toFixed(3);
+    let p = (a + b + c) / 2
+    console.log((Math.sqrt(p * (p - a) * (p - b) * (p - c))).toFixed(2));
   })();
 </script>
 
 <script id="ch0103/18">
-  (function(){
-  let a1 = +prompt("","");
-  let a2 = +prompt("","");
-  let n = +prompt("","");
-  let d = a2 - a1;
-  console.log(a1+(n-1)*d);
+  (function () {
+    let a1 = +prompt("", "");
+    let a2 = +prompt("", "");
+    let n = +prompt("", "");
+    let d = a2 - a1;
+    console.log(a1 + (n - 1) * d);
   })();
 </script>
 
 
 <script id="ch0103/19">
-  (function(){
-  let a1 = +prompt("","");
-  let a2 = +prompt("","");
-  console.log(a1*a2);
+  (function () {
+    let a1 = +prompt("", "");
+    let a2 = +prompt("", "");
+    console.log(a1 * a2);
   })();
-</script> 
+</script>
 
 <script id="ch0103/20">
-  (function(){
-  let n = +prompt("","");
-  console.log(2**n);
+  (function () {
+    let n = +prompt("", "");
+    console.log(2 ** n);
   })();
-</script> 
+</script>
 
 <script id="ch0104/01">
-  (function(){
-  let a = +prompt("请输入","");
-  if(a > 0)
-    console.log("positive");
-  else if(a === 0)
-    console.log("zero");
-  else
-    console.log("negative");
-    })();
+  (function () {
+    let a = +prompt("请输入", "");
+    if (a > 0)
+      console.log("positive");
+    else if (a === 0)
+      console.log("zero");
+    else
+      console.log("negative");
+  })();
 </script>
 
 <script id="ch0104/02">
-  (function(){
-  let a = +prompt("请输入","");
-  console.log(Math.abs(a));
+  (function () {
+    let a = +prompt("请输入", "");
+    console.log(Math.abs(a));
   })();
 </script>
 
 
 <script id="ch0104/03">
-  (function(){
-  let a = +prompt("请输入数字","");
-  if(a%2 === 1)
-    console.log("odd");
-  if(a%2 === 0)
-    console.log("even");
-    })();
+  (function () {
+    let a = +prompt("请输入数字", "");
+    if (a % 2 === 1)
+      console.log("odd");
+    if (a % 2 === 0)
+      console.log("even");
+  })();
 </script>
 
 
 <script id="ch0104/04">
-  (function(){
-  let a = prompt("请输入字符","");
-  if(a.charCodeAt()%2 === 1)
-    console.log("YES");
-  if(a.charCodeAt()%2 === 0)
-    console.log("NO");
-    })();
+  (function () {
+    let a = prompt("请输入字符", "");
+    if (a.charCodeAt() % 2 === 1)
+      console.log("YES");
+    if (a.charCodeAt() % 2 === 0)
+      console.log("NO");
+  })();
 </script>
 
 
 <script id="ch0104/05">
-  (function(){
-  let a = +prompt("请输入第一个数","");
-  let b = +prompt("请输入第二个数","");
-  if(a > b)
-    console.log(">");
-  else if(a === b)
-    console.log("=");
-  else
-    console.log("<");
-    })();
+  (function () {
+    let a = +prompt("请输入第一个数", "");
+    let b = +prompt("请输入第二个数", "");
+    if (a > b)
+      console.log(">");
+    else if (a === b)
+      console.log("=");
+    else
+      console.log("<");
+  })();
 </script>
 
 
 <script id="ch0104/06">
-  (function(){
-  let a = +prompt("输入一个正数","");
-  if(a > 10 && a < 99)
-    console.log(1);
-  else
-    console.log(0);
-    })();
+  (function () {
+    let a = +prompt("输入一个正数", "");
+    if (a > 10 && a < 99)
+      console.log(1);
+    else
+      console.log(0);
+  })();
 </script>
 
 
 
 <script id="ch0104/07">
-  (function(){
-  let a = +prompt("幸运瓶盖数","");
-  let b = +prompt("鼓励瓶盖数","");
-  if(a > 9 || b > 19)
-    console.log(1)
-  else 
-    console.log(0)
-    })();
+  (function () {
+    let a = +prompt("幸运瓶盖数", "");
+    let b = +prompt("鼓励瓶盖数", "");
+    if (a > 9 || b > 19)
+      console.log(1)
+    else
+      console.log(0)
+  })();
 </script>
 
 
 <script id="ch0104/08">
-  (function(){
-  let a = +prompt("输入一个整数","");
-  if(a%3 === 0 && a%5 === 0)
-    console.log("YES");
-  else 
-    console.log("N0");
-    })();
+  (function () {
+    let a = +prompt("输入一个整数", "");
+    if (a % 3 === 0 && a % 5 === 0)
+      console.log("YES");
+    else
+      console.log("N0");
+  })();
 </script>
 
 
 
 <script id="ch0104/09">
-  (function(){
-  let a = +prompt("请输入","");
-  if(a % 3 === 0 && a % 5 === 0 && a % 7 === 0)
-    console.log("3 5 7");
-  else if(a % 3 === 0 && a % 5 === 0 && a % 7 !== 0)
-    console.log("3 5");
-  else if(a % 3 === 0 && a % 5 !== 0 && a % 7 === 0)
-    console.log("3 7");
-  else if(a % 3 !== 0 && a % 5 === 0 && a % 7 === 0)
-    console.log("5 7");
-  else if(a % 3 === 0 && a % 5 !== 0 && a % 7 !== 0)
-    console.log("3");
-  else if(a % 3 !== 0 && a % 5 === 0 && a % 7 !== 0)
-    console.log("5");
-  else if(a % 3 !== 0 && a % 5 !== 0 && a % 7 === 0)
-    console.log("7");
-  else
-    console.log("n");
+  (function () {
+    let a = +prompt("请输入", "");
+    if (a % 3 === 0 && a % 5 === 0 && a % 7 === 0)
+      console.log("3 5 7");
+    else if (a % 3 === 0 && a % 5 === 0 && a % 7 !== 0)
+      console.log("3 5");
+    else if (a % 3 === 0 && a % 5 !== 0 && a % 7 === 0)
+      console.log("3 7");
+    else if (a % 3 !== 0 && a % 5 === 0 && a % 7 === 0)
+      console.log("5 7");
+    else if (a % 3 === 0 && a % 5 !== 0 && a % 7 !== 0)
+      console.log("3");
+    else if (a % 3 !== 0 && a % 5 === 0 && a % 7 !== 0)
+      console.log("5");
+    else if (a % 3 !== 0 && a % 5 !== 0 && a % 7 === 0)
+      console.log("7");
+    else
+      console.log("n");
 
-})();
+  })();
 </script>
 
 
 <script id="ch0104/10">
-  (function(){
-  let a = +prompt("语文","");
-  let b = +prompt("数学","");
-  if((a > 60 && b > 60) || (a < 60 && b > 60))
-    console.log(1);
-  else 
-    console.log(0)
-    })();
+  (function () {
+    let a = +prompt("语文", "");
+    let b = +prompt("数学", "");
+    if ((a > 60 && b > 60) || (a < 60 && b > 60))
+      console.log(1);
+    else
+      console.log(0)
+  })();
 </script>
 
 
 
 <script id="ch0104/11">
-  (function(){
-  let a = +prompt("日期","");
-  if(a === 1 || a === 3 || a === 5)
-  console.log("NO");
-  else
-  console.log("YES");
+  (function () {
+    let a = +prompt("日期", "");
+    if (a === 1 || a === 3 || a === 5)
+      console.log("NO");
+    else
+      console.log("YES");
   })();
 </script>
 
 
 <script id="ch0104/12">
-  (function(){
-  let a = +prompt("办事距离","");
-  if(a/3+50 > a/1.2)
-  console.log("Bike");
-  else if(a/3+50 === a/1.2)
-  console.log("All");
-  else
-  console.log("Walk");
+  (function () {
+    let a = +prompt("办事距离", "");
+    if (a / 3 + 50 > a / 1.2)
+      console.log("Bike");
+    else if (a / 3 + 50 === a / 1.2)
+      console.log("All");
+    else
+      console.log("Walk");
   })();
 </script>
 
 
 <script id="ch0104/13">
-  (function(){
-  let x = +prompt("输入x","");
-  if(x < 5 && x > 0)
-    let y = -x + 2.5;
-  else if(x < 10 && x > 5)
-    let y = 2-1.5*(x-3)**2;
-  else if(x >= 10 && x < 20)
-    let y = x/2-1.5;
-    console.log(y);  
-    })();
+  (function () {
+    let x = +prompt("输入x", "");
+    if (x < 5 && x > 0)
+      let y = -x + 2.5;
+    else if (x < 10 && x > 5)
+      let y = 2 - 1.5 * (x - 3) ** 2;
+    else if (x >= 10 && x < 20)
+      let y = x / 2 - 1.5;
+    console.log(y);
+  })();
 </script>
 
 
 <script id="ch0104/14">
-  (function(){
-  let a = +prompt("重量","");
-  let b = prompt("是否加急","");
-  let m;
-  if(a <= 1000)
-    m = 8;
-  else 
-    m = 8 + Math.ceil((a - 1000)/500)*4;
-  if(b === "y")
-    m += 5;
-  console.log(m.toFixed(3));
+  (function () {
+    let a = +prompt("重量", "");
+    let b = prompt("是否加急", "");
+    let m;
+    if (a <= 1000)
+      m = 8;
+    else
+      m = 8 + Math.ceil((a - 1000) / 500) * 4;
+    if (b === "y")
+      m += 5;
+    console.log(m.toFixed(3));
   })();
 </script>
 
 <script id="ch0104/15">
-  (function(){
-  let n = +prompt("","");
-  let x = +prompt("","");
-  let y = +prompt("","");
-  console.log(Math.max(n,x,y));
+  (function () {
+    let n = +prompt("", "");
+    let x = +prompt("", "");
+    let y = +prompt("", "");
+    console.log(Math.max(n, x, y));
   })();
 </script>
 
 
 <script id="ch0104/16">
-  (function(){
-  let a = +prompt("","");
-  let b = +prompt("","");
-  let c = +prompt("","");
-  if(a+b > c && a+c > b && b+c >a  )
-    console.log("yes");
-  else 
-    console.log("no");
-    })();
+  (function () {
+    let a = +prompt("", "");
+    let b = +prompt("", "");
+    let c = +prompt("", "");
+    if (a + b > c && a + c > b && b + c > a)
+      console.log("yes");
+    else
+      console.log("no");
+  })();
 </script>
 
 
 <script id="ch0104/17">
-  (function(){
-  let n = +prompt("","");
-  if((n%4 == 0 && n%100 != 0) || n %400 == 0)
-    console.log("Y");
-  else
-    console.log("N");
-    })();
+  (function () {
+    let n = +prompt("", "");
+    if ((n % 4 == 0 && n % 100 != 0) || n % 400 == 0)
+      console.log("Y");
+    else
+      console.log("N");
+  })();
 </script>
 
 <script id="ch0104/18">
-  (function(){
-  let a = +prompt("","");
-  let b = +prompt("","");
-  if(Math.abs(a) > 1 || Math.abs(b) > 1)
-    console.log("no");
-  else 
-    console.log("yes")
-    })();
+  (function () {
+    let a = +prompt("", "");
+    let b = +prompt("", "");
+    if (Math.abs(a) > 1 || Math.abs(b) > 1)
+      console.log("no");
+    else
+      console.log("yes")
+  })();
 </script>
 
 
 <script id="ch0104/19">
-  (function(){
-  let a = +prompt("","");
-  let b = +prompt("","");
-  let c = prompt("运算符号","");
-  let y;
-  if (c === "+")
-    y = a+b;
-  else if (c === "-")
-    y = a-b;
-  else if (c === "*")
-    y = a*b;
-  else if (c === "/"){
-    if(b === 0)
-      y = "Divided by zero!";
+  (function () {
+    let a = +prompt("", "");
+    let b = +prompt("", "");
+    let c = prompt("运算符号", "");
+    let y;
+    if (c === "+")
+      y = a + b;
+    else if (c === "-")
+      y = a - b;
+    else if (c === "*")
+      y = a * b;
+    else if (c === "/") {
+      if (b === 0)
+        y = "Divided by zero!";
+      else
+        y = a / b;
+    }
     else
-      y = a/b;
-  }
-  else 
-    y = "Invalid operator!";
-  console.log(y);
+      y = "Invalid operator!";
+    console.log(y);
   })();
-</script> 
+</script>
 
 <script id="ch0104/20">
-  (function(){
-  let a = +prompt("","");
-  let b = +prompt("","");
-  let c = +prompt("","");
-  let x1,x2;
-  if(b2 === 4 * a * c){
-    console.log("x1=x2="+((-b + sqrt(b*b-4*a*c))/(2*a)).toFixed(5))
-  }else if (b2 > 4 * a * c)
-  console.log("x1="+(-b + (sqrt(b*b-4*a*c))/(2*a)).toFixed(5)+";"+"x2="+(-b - (sqrt(b*b-4*a*c))/(2*a)).toFixed(5));
-  else
-  console.log("x1="+ (-b / (2*a)).toFixed(5)+"+"+(sqrt(4*a*c-b*b) / (2*a)).toFixed(5)+"i"+";"+"x2="+ (-b / (2*a)).toFixed(5)+"-"+(sqrt(4*a*c-b*b) / (2*a)).toFixed(5)+"i");
+  (function () {
+    let a = +prompt("", "");
+    let b = +prompt("", "");
+    let c = +prompt("", "");
+    let x1, x2;
+    if (b2 === 4 * a * c) {
+      console.log("x1=x2=" + ((-b + sqrt(b * b - 4 * a * c)) / (2 * a)).toFixed(5))
+    } else if (b2 > 4 * a * c)
+      console.log("x1=" + (-b + (sqrt(b * b - 4 * a * c)) / (2 * a)).toFixed(5) + ";" + "x2=" + (-b - (sqrt(b * b - 4 * a * c)) / (2 * a)).toFixed(5));
+    else
+      console.log("x1=" + (-b / (2 * a)).toFixed(5) + "+" + (sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5) + "i" + ";" + "x2=" + (-b / (2 * a)).toFixed(5) + "-" + (sqrt(4 * a * c - b * b) / (2 * a)).toFixed(5) + "i");
   })();
-</script> 
+</script>
 
 
 <script id="ch0104/21">
-  (function(){
-  let n = +prompt("","");
-  let x = +prompt("","");
-  let y = +prompt("","");
-  console.log(n-Math.ceil(y/x));
+  (function () {
+    let n = +prompt("", "");
+    let x = +prompt("", "");
+    let y = +prompt("", "");
+    console.log(n - Math.ceil(y / x));
   })();
 </script>
 
 <script id="ch0105/01">
-  (function(){
-  let a = +prompt("人数",""),s = 0;
-    for(let i=0;i < a;i++){
+  (function () {
+    let a = +prompt("人数", ""), s = 0;
+    for (let i = 0; i < a; i++) {
       s += +prompt("");
     }
-    console.log((s/a).toFixed(2));
+    console.log((s / a).toFixed(2));
   })();
 </script>
 
 
 <script id="ch0105/02">
-  (function(){
-  let s = 0;
-    for(let i=0;i < 12;i++){
+  (function () {
+    let s = 0;
+    for (let i = 0; i < 12; i++) {
       s += +prompt("");
     }
-    console.log((s/12).toFixed(2));
+    console.log((s / 12).toFixed(2));
   })();
 </script>
 
 
-  <script id="ch0105/03">
-    (function(){
-      let a = +prompt("输入数量n","");
-      let b = prompt("输入数据，以空格隔开","");
-      let arr = b.split(" ").map(Number);
-      console.log(arr.reduce((prev,cur)=>prev + cur)/a);
-    })();
-  </script>
+<script id="ch0105/03">
+  (function () {
+    let a = +prompt("输入数量n", "");
+    let b = prompt("输入数据，以空格隔开", "");
+    let arr = b.split(" ").map(Number);
+    console.log(arr.reduce((prev, cur) => prev + cur) / a);
+  })();
+</script>
 
 
 <script id="ch0105/04">
-  (function(){
-  let a = +prompt("整数n",""),s = 0;
-    for(let i=0;i < a;i++){
+  (function () {
+    let a = +prompt("整数n", ""), s = 0;
+    for (let i = 0; i < a; i++) {
       s += +prompt("");
     }
-    console.log(s," ",(s/a).toFixed(5));
+    console.log(s, " ", (s / a).toFixed(5));
   })();
 </script>
 
 <script id="ch0105/05">
-  (function(){
-  let a = +prompt("整数n",""),s = 0;
-    for(let i=0;i < a;i++){
-      s =Math.max(s,+prompt(""));
+  (function () {
+    let a = +prompt("整数n", ""), s = 0;
+    for (let i = 0; i < a; i++) {
+      s = Math.max(s, +prompt(""));
     }
     console.log(s);
   })();
@@ -521,15 +523,449 @@
 
 
 <script id="ch0105/06">
-  (function(){
-      let a = +prompt("输入数量n","");
-      let b = prompt("输入数据，以空格隔开","");
-      let arr = b.split(" ").map(Number),max = 0; min = 1000;
-      arr.forEach((items,index,arr)=>{
-        max = Math.max(max,items);
-        min = Math.min(min,items); 
-      })
-      console.log(max-min);
-    })();
+  (function () {
+    let a = +prompt("输入数量n", "");
+    let b = prompt("输入数据，以空格隔开", "");
+    let arr = b.split(" ").map(Number), max = 0; min = 1000;
+    arr.forEach((items, index, arr) => {
+      max = Math.max(max, items);
+      min = Math.min(min, items);
+    })
+    console.log(max - min);
+  })();
 </script>
- 
+
+
+
+
+<script id="ch0105/07">
+  (function () {
+    let a = +prompt("输入数量n", "");
+    let gold = 0,
+      silver = 0,
+      copper = 0;
+    for (let i = 0; i < a; i++) {
+      let b = prompt("输入数据，以空格隔开", "");
+      let arr = b.split(" ").map(Number);
+      gold += arr[0];
+      silver += arr[1];
+      copper += arr[2];
+    }
+    console.log(gold, silver, copper);
+  })();
+</script>
+
+
+
+<script id="ch0105/08">
+  (function () {
+    let a = +prompt("输入数量n", "");
+    let sum = 0;
+    for (let i = 1; i < a; i++) {
+      let b = +prompt("输入角度", "");
+      sum += b;
+    }
+    console.log((a - 2) * 180 - sum);
+  })();
+</script>
+
+
+<script id="ch0105/09">
+  (function () {
+    let m = +prompt("输入m", "");
+    let n = +prompt("输入n", "");
+    let sum = 0;
+    for (let i = m; i < n + 1; i++) {
+      if (i % 2 === 1)
+        sum += i;
+    }
+    console.log(sum);
+  })();
+</script>
+
+
+
+
+<script id="ch0105/10">
+  (function () {
+    let m = +prompt("输入m", "");
+    let n = +prompt("输入n", "");
+    let sum = 0;
+    for (let i = m; i < n + 1; i++) {
+      if (i % 17 === 0)
+        sum += i;
+    }
+    console.log(sum);
+  })();
+</script>
+
+
+
+<script id="ch0105/11">
+  (function () {
+    let k = +prompt("输入k", "");
+    let sum1 = 0, sum5 = 0, sum10 = 0;
+    for (let i = 0; i < k; i++) {
+      let m = +prompt("", "");
+      if (m === 1)
+        sum1 += 1;
+      if (m === 5)
+        sum5 += 1;
+      if (m === 10)
+        sum10 += 1;
+    }
+    console.log(sum1);
+    console.log(sum5);
+    console.log(sum10);
+  })();
+</script>
+
+<script id="ch0105/12">
+  (function () {
+    let N = +prompt("输入N", "");
+    let n = +prompt("输入n", "");
+    let sum = 0;
+    for (let i = 0; i < N; i++) {
+      let m = +prompt("输入数字", "");
+      if (m === n)
+        sum += 1;
+    }
+    console.log(sum);
+  })();
+</script>
+
+
+<script id="ch0105/13">
+  (function () {
+    let a = +prompt("输入a", "");
+    let n = +prompt("输入n", "");
+    let power = 1;
+    for (let i = 0; i < n; i++) {
+      power *= a;
+    }
+    console.log(power);
+  })();
+</script>
+
+
+
+<script id="ch0105/14">
+  (function () {
+    let a = +prompt("输入人口基数", "");
+    let n = +prompt("输入年数", "");
+    for (let i = 0; i < n; i++) {
+      a *= 1.001;
+    }
+    console.log(a.toFixed(4));
+  })();
+</script>
+
+<script id="ch0105/15">
+  (function () {
+    let R = +prompt("输入复合年利率", "");
+    let M = +prompt("输入钱数", "");
+    let Y = +prompt("输入年数", "");
+    for (let i = 0; i < Y; i++) {
+      M *= (1 + R/100);
+    }
+    console.log(M | 0);
+  })();
+</script>
+
+<script id="ch0105/16">
+  (function () {
+    let N = +prompt("输入年薪", "");
+    let K = +prompt("输入房价增长率", "");
+    let sumK = 200;
+    for(i = 1; i*N < sumK;i++){
+      sumK *= (1 + K/100);
+      if(i > 20){
+      console.log("Impossible");
+      break;
+      }
+    }
+    if(i <= 20)
+    console.log(i);
+  })();
+</script>
+
+<script id="ch0105/17">
+  (function () {
+    let k = +prompt("输入k", "");
+    function FB(k){
+    let sum;
+    if(k === 1 || k === 2){
+      sum = 1
+      return sum;
+    }
+    if(k>2)
+    return FB(k-1)+FB(k-2) 
+  }
+  console.log(FB(k));
+  })();
+</script>
+
+
+
+<script id="ch0105/18">
+  (function () {
+    let n = +prompt("输入n", "");
+    let m1 = +prompt("输入m1", "");
+    let m2 = +prompt("输入m2", "");
+    let s = m1 - m2;
+    for(let i = 1;i < n;i++ ){  
+      let x = +prompt("输入m1", "");
+      let y = +prompt("输入m2", "");
+      if(x - y > s)
+      console.log("better");
+      else if(x - y < s)
+      console.log("worse");
+      else
+      console.log("same");
+    }
+  })();
+</script>
+
+
+
+<script id="ch0105/19">
+  (function () {
+    let n = +prompt("输入n", "");
+    let sum = 0;
+    for(let i = 0;i < n;i++ ){  
+      let x = +prompt("输入距离x", "");
+      let y = +prompt("输入距离y", "");
+      let k = +prompt("输入人数", "");
+      let m = 0;
+      m = k*1.5 + Math.sqrt(x**2+y**2)/25;
+      sum += m;
+    }
+    console.log(Math.ceil(sum));
+  })();
+</script>
+
+
+<script id="ch0105/20">
+  (function () {
+    let h = +prompt("输入h", "");
+    let sum = 0;
+    for(let i = 0; i < 10 ; i++){
+      sum += 1.5*h;
+      h *= 0.5;
+    }
+    console.log(sum-h);
+    console.log(h);
+  })();
+</script>
+
+
+<script id="ch0105/21">
+  (function () {
+    let n = +prompt("输入n", "");
+    if(n > 1){
+      while(n !== 1){
+        if(n % 2 === 0){
+          console.log(n+"/"+"2"+"="+n/2);
+          n = n / 2;
+        }
+        else if(n % 2 === 1){
+          console.log(n+"*"+"3"+"+"+"1"+"="+(n*3+1));
+          n = n*3 + 1;
+        }
+      }
+    }
+    console.log("End");
+  })();
+</script>
+
+
+<script id="ch0105/22">
+  (function () {
+    // let arr=[290,230,280,200,300,170,330,50,90,80,200,60];
+    // let arr=[290,230,280,200,300,170,340,50,90,80,200,60];
+    let sum = 0, last = 0,x = 1 ,temp;
+    for(let i = 0; i < 12;i++ ){
+      let s = +prompt("请输入预算","");
+      // s = arr[i];
+      last = 300 + last - s;
+      if( last < 0){
+        console.log(-x);
+        temp =-1;
+        continue;
+      }
+      if(last > 100){
+        sum += Math.floor(last/100)*100;
+        last = last % 100;
+      }
+      x++;
+    }
+    if(temp !== -1)
+      console.log(1.2*sum + last);
+  })();
+</script>
+
+<script id="ch0105/23">
+  (function () {
+    let m = +prompt("请输入药品总量","");
+    let n = +prompt("请输入取药人数","");
+    let temp = 1; 
+    for(let i = 0;i < n;i++){
+      let x = +prompt("");
+      m -= x;
+      if(m < 0){
+        continue;
+      }
+      temp++;
+    } 
+    console.log(n-temp-1);
+  })();
+</script>
+
+<script id="ch0105/24">
+  (function () {
+    let n = +prompt("请输入n","");
+    let h = 0,max = 0;
+    for(let i = 0;i < n;i++){
+      let high = +prompt("high","");
+      let low = +prompt("low","");
+      if(low >= 60 && low <= 90 && high >= 90 && high <= 140){
+        h++;
+        max = Math.max(max,h);
+      }else
+      h = 0;
+    }
+    console.log(max);
+  })();
+</script>
+
+
+<script id="ch0105/25">
+  (function () {
+    for(a = 0 ;a<1000000;a++){
+      if(a.toString(7).toString().split('').reverse().join('') === a.toString(9).toString()){ 
+        console.log(a);
+        console.log(a.toString(7));
+        console.log(a.toString(9))
+    }
+  }
+  })();
+</script>
+
+
+<script id="ch0105/26">
+  (function () {
+    let n = +prompt("请输入n","");
+    let temp = 0;
+    for(let i = 0;i < n;i++){
+      let m = prompt("请输入","");
+      if((+m[3]) - (+m[0]) - (+m[2]) - (+m[1]) > 0){
+        temp ++;
+      }
+    }
+    console.log(temp);
+  })();
+</script>
+
+
+<script id="ch0105/27">
+  (function () {
+    let n = +prompt("请输入n","");
+    let sn = 0,m = 0;
+    while(n > sn){
+      sn += 1/(1 + m)
+      m++;
+    }
+    console.log(1 + m);
+  })();
+</script>
+
+
+<script id="ch0105/28">
+  (function () {
+    let n = prompt("请输入n","");
+    n.split("").reverse().forEach(element => {
+      console.log(element);
+    });
+
+  })();
+</script>
+
+
+<script id="ch0105/29">
+  (function () {
+    let n = +prompt("请输入n","");
+    if(n >0){
+      console.log(Number(n.toString().split("").reverse().join("")) |0);
+    } 
+    else if(n < 0) {
+      
+      let m = Number(Math.abs(n).toString().split("").reverse().join("")) | 0;
+      console.log(-m);
+    }else 
+    console.log(0);
+  })();
+</script>
+
+<script id="ch0105/30">
+  (function () {
+    let m = prompt("请输入m","");
+    let k = +prompt("请输入k","");
+    let arr = m.split(""),temp = 0;
+    arr.forEach(items=>{
+      if(items === "3")
+      temp++;
+    })
+    if(Number(m) % 19 === 0 && temp === k)
+      console.log("YES");
+      else
+      console.log("N0");
+  })();
+</script>
+
+<script id="ch0105/31">
+  (function () {
+    let n = +prompt("请输入灯数n","");
+    let m = +prompt("请输入人数m","");
+    for(let i = 1; i <= n;i++){
+      //灯数；
+      let temp = 1;
+      for(let j = 1;j <= m;j++){
+        //人数；
+        if(j === 1)
+          temp = -1;
+        if(j > 1 && i % j ===0)
+          temp = -temp;
+      }
+      if(temp === -1)
+        console.log(i);
+    }
+  })();
+</script>
+
+
+<script id="ch0105/32">
+  (function () {
+    let n = +prompt("请输n","");
+    let p1 = 1,q1 = 2,sum = 0 ,temp;
+    for(let i = 0;i < n; i++){
+      sum += q1/p1;
+      temp = q1;
+      q1 = q1 + p1;
+      p1 = temp;
+    }
+    console.log(sum.toFixed(4));
+  })();
+</script>
+
+
+<script id="ch0105/33">
+  (function () {
+    let n = +prompt("请输n","");
+    let sum = 0 ;
+    for(let i = 1;i <= n; i++){
+      sum += (-1)**(i-1)*1/i;
+    }
+    console.log(sum.toFixed(4));
+  })();
+</script>
+
