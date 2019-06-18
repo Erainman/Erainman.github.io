@@ -348,13 +348,14 @@
 <script id="ch0104/13">
   (function () {
     let x = +prompt("输入x", "");
+    let y;
     if (x < 5 && x >= 0)
-      let y = -x + 2.5;
+      y = -x + 2.5;
     else if (x < 10 && x >= 5)
-       y = 2 - 1.5 * (x - 3) ** 2;
+      y = 2 - 1.5 * (x - 3) ** 2;
     else if (x >= 10 && x < 20)
       y = x / 2 - 1.5;
-    console.log(y);
+    console.log(y.toFixed(3));
   })();
 </script>
 
@@ -448,6 +449,7 @@
     let a = +prompt("", "");
     let b = +prompt("", "");
     let c = +prompt("", "");
+    let b2;
     let x1, x2;
     if (b2 === 4 * a * c) {
       console.log("x1=x2=" + ((-b + sqrt(b * b - 4 * a * c)) / (2 * a)).toFixed(5))
@@ -840,7 +842,7 @@
 
 <script id="ch0105/25">
   (function () {
-    for(a = 0 ;a<1000000;a++){
+    for(a = 0 ;a<1000;a++){
       if(a.toString(7).toString().split('').reverse().join('') === a.toString(9).toString()){ 
         console.log(a);
         console.log(a.toString(7));
@@ -925,6 +927,7 @@
   (function () {
     let n = +prompt("请输入灯数n","");
     let m = +prompt("请输入人数m","");
+    let arr = [];
     for(let i = 1; i <= n;i++){
       //灯数；
       let temp = 1;
@@ -936,7 +939,6 @@
           temp = -temp;
       }
       if(temp === -1)
-        let arr = [];
         arr.push(i);
     }
     console.log(arr.toString());
