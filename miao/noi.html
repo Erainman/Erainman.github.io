@@ -145,7 +145,7 @@
     let ya = +prompt("", "");
     let xb = +prompt("", "");
     let yb = +prompt("", "");
-    console.log((Math.sqrt((xa - xb) *(xa - xb) - (ya - yb) * (ya - yb))).toFixed(3));
+    console.log((Math.sqrt((xa - xb) *(xa - xb) + (ya - yb) * (ya - yb))).toFixed(3));
   })();
 </script>
 
@@ -160,7 +160,7 @@
     let zb = +prompt("", "");
     let a = (Math.sqrt((xa - ya) ** 2 - (xb - yb) ** 2)).toFixed(3);
     let b = (Math.sqrt((xa - za) ** 2 - (xb - zb) ** 2)).toFixed(3);
-    let c = (Math.sqrt((za - ya) ** 2 - (zb - yb) ** 2))toFixed(3);
+    let c = (Math.sqrt((za - ya) ** 2 - (zb - yb) ** 2)).toFixed(3);
     let p = (a + b + c) / 2
     console.log((Math.sqrt(p * (p - a) * (p - b) * (p - c))).toFixed(2));
   })();
