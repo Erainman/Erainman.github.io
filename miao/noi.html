@@ -59,12 +59,12 @@
 
 <script id="ch0103/07">
   (function () {
+    let x = +prompt("");
     let a = +prompt("");
     let b = +prompt("");
     let c = +prompt("");
     let d = +prompt("");
-    let x = +prompt("");
-    console.log((a * x ** 3 + b * x ** 2 + c * x + d).toFixed(7))
+    console.log((a * x ** 3 + b * x ** 2 + c * x + d).toFixed(7));
   })();
 </script>
 
@@ -81,7 +81,7 @@
 <script id="ch0103/09">
   (function () {
     let a = +prompt("半径", "");
-    console.log((2 * a, 2 * Math.PI * a, Math.PI * a ** 2).toFixed(4));
+    console.log((2 * a, 2 * 3.14159 * a, 3.14159 * a ** 2).toFixed(4));
   })();
 </script>
 
@@ -116,8 +116,7 @@
 <script id="ch0103/13">
   (function () {
     let a = prompt("", "");
-    a.split('').reverse().join('');
-    console.log(+a);
+    console.log(Number(a.split('').reverse().join('')));
   })();
 </script>
 
@@ -146,7 +145,7 @@
     let ya = +prompt("", "");
     let xb = +prompt("", "");
     let yb = +prompt("", "");
-    console.log((Math.sqrt((xa - xb) ** 2 - (ya - yb) ** 2)).Math.toFixed(3));
+    console.log((Math.sqrt((xa - xb) ** 2 - (ya - yb) ** 2)).toFixed(3));
   })();
 </script>
 
@@ -336,7 +335,7 @@
 <script id="ch0104/12">
   (function () {
     let a = +prompt("办事距离", "");
-    if (a / 3 + 50 > a / 1.2)
+    if (a / 3 + 50 < a / 1.2)
       console.log("Bike");
     else if (a / 3 + 50 === a / 1.2)
       console.log("All");
@@ -349,12 +348,12 @@
 <script id="ch0104/13">
   (function () {
     let x = +prompt("输入x", "");
-    if (x < 5 && x > 0)
+    if (x < 5 && x >= 0)
       let y = -x + 2.5;
-    else if (x < 10 && x > 5)
-      let y = 2 - 1.5 * (x - 3) ** 2;
+    else if (x < 10 && x >= 5)
+       y = 2 - 1.5 * (x - 3) ** 2;
     else if (x >= 10 && x < 20)
-      let y = x / 2 - 1.5;
+      y = x / 2 - 1.5;
     console.log(y);
   })();
 </script>
@@ -371,7 +370,7 @@
       m = 8 + Math.ceil((a - 1000) / 500) * 4;
     if (b === "y")
       m += 5;
-    console.log(m.toFixed(3));
+    console.log(m.toFixed(0));
   })();
 </script>
 
@@ -486,7 +485,7 @@
     for (let i = 0; i < 12; i++) {
       s += +prompt("");
     }
-    console.log((s / 12).toFixed(2));
+    console.log("$"+(s / 12).toFixed(2));
   })();
 </script>
 
@@ -507,7 +506,7 @@
     for (let i = 0; i < a; i++) {
       s += +prompt("");
     }
-    console.log(s, " ", (s / a).toFixed(5));
+    console.log(s+ " "+(s / a).toFixed(5));
   })();
 </script>
 
@@ -718,9 +717,9 @@
       let y = +prompt("输入m2", "");
       if(x - y > s)
       console.log("better");
-      else if(x - y < s)
+      if(x - y < s)
       console.log("worse");
-      else
+      if(x - y === s)
       console.log("same");
     }
   })();
@@ -753,8 +752,8 @@
       sum += 1.5*h;
       h *= 0.5;
     }
-    console.log(sum-h);
-    console.log(h);
+    console.log((sum-h.to).toFixed(4));
+    console.log(h.toFixed(7));
   })();
 </script>
 
@@ -937,8 +936,10 @@
           temp = -temp;
       }
       if(temp === -1)
-        console.log(i);
+        let arr = [];
+        arr.push(i);
     }
+    console.log(arr.toString());
   })();
 </script>
 
