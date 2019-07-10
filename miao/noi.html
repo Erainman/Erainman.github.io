@@ -1,4 +1,4 @@
-
+<!-- 
 
 <script id="ch0103/01">
   (function () {
@@ -970,5 +970,503 @@
     }
     console.log(sum.toFixed(4));
   })();
+</script> 
+
+<script id="ch0105/34">
+  (function () {
+    let n = +prompt("请输n","");
+    let sum = 0 , temp = 1;
+    for(let i = 1;i <= n; i++){
+      temp *= i;
+      sum += temp;
+    }
+    console.log(sum);
+  })();
 </script>
+
+
+
+<script id="ch0105/35">
+  (function () {
+    let n = +prompt("请输n","");
+    let sum = 1 , temp = 1;
+    for(let i = 1;i <= n; i++){
+      temp *= i;
+      sum += 1/temp;
+    }
+    console.log(sum.toFixed(10));
+  })();
+</script>
+
+
+<script id="ch0105/36">
+  (function () {
+    let x = +prompt("请输x","");
+    let n = +prompt("请输n","");
+    let sum = 1 , temp = 1;
+    for(let i = 1;i <= n; i++){
+      temp *= x;
+      sum += temp;
+    }
+    console.log(sum.toFixed(2));
+  })();
+</script>
+
+
+<script id="ch0105/37" >
+  let maxM = +prompt();//5
+  let n = +prompt();//2
+  let x = +prompt();//10
+  let m = 0;
+  while(1) {
+    if (n <= maxM ) {
+      if (x === 0) {
+        break;
+      } 
+      use = Math.ceil(( maxM - m) / n);
+      if(use > x) {
+        use = x;
+      }   
+      x = x - use;
+      m = use * n + m;
+      if (m > maxM) {
+        m = maxM
+      }
+      if(m / n >= 1) {
+      n += Math.floor( m / n);
+      m = m - Math.floor( m / n) ;  
+      } 
+    }else {
+      break;
+    }
+    
+  }
+
+  console.log(n);
+
+</script>
+
+
+<script id="ch0105/38" >
+  let p = +prompt();
+
+  for(let j = 0; j < p; j ++){
+    
+    let n = +prompt();
+    let m;
+    let arr = [];
+    for(let i = n; i >= 0 ; i--) {
+      m = +prompt();
+      if (i){
+      arr.push(m * i);
+      }
+    }
+    if(arr.every(x => x === 0)){
+      console.log(0);
+    }else{
+    console.log(arr.join(" "));
+    }
+  }
+
+
+</script>
+
+<script id="ch0105/39" >
+  let n = +prompt();
+  let r = 0;
+  for(let i = 0 ;i <= 9 ; i++) {
+    for(let j = 0; j <= 9; j++ ){
+      if((10 * i + j <= n) && j !== 7 && i !== 7 && ((10 * i + j) % 7) !== 0 ){
+        r += 100 * i * i + 20 * i * j+ j * j;
+      }
+    }
+  }
+  console.log(r);
+
+
+</script>
+
+
+<script id="ch0105/40" >
+  let n = +prompt();
+  let count = 0;
+  for(let i = 1; i <= n; i++) {
+    i.toString().split("").forEach(x => {
+      if(x === "1") {
+        count++;
+      }
+    })
+  }
+  console.log(count);
+
+
+</script>
+
+<script id="ch0105/41" >
+  let l = +prompt();
+  let r = +prompt();
+  let count = 0;
+  for(let i = l; i <= r; i++) {
+    i.toString().split("").forEach(x => {
+      if(x === "2") {
+        count++;
+      }
+    })
+  }
+  console.log(count);
+
+
+</script>
+
+
+<script id="ch0105/42" >
+  let w = +prompt();
+  let h = +prompt();
+  let s = prompt();
+  let e = +prompt();
+  let str ;
+  let sts = ""
+  for(let i = 1; i <= h; i++) {
+    str = ""
+    for(let j = 1; j <= w; j++) {
+      if ( i === 1 || i === h) {
+        str += s;
+      }
+      else {
+        if(e){
+          str += s;
+        }else {
+          if(j ===1 || j === w){
+          str += s; 
+          }else {
+            str += " ";
+          }
+        }
+      }
+    }
+    if(i !== h) {
+      sts += str + "\n";
+    }else {
+      sts += str ;
+
+    }
+  }
+  console.log(sts);
+
+
+</script>
+
+<script id="ch0105/43" >
+  let n = +prompt();
+  for(let i = 2 ;i <= Math.sqrt(n);i++) {
+    if( n % i === 0) {
+      console.log( n / i);
+    }
+  }
+
+
+</script>
+
+
+<script id="ch0105/44" >
+  let n = +prompt();
+  let count = 0;
+  let num = 2;
+  while(1) {
+    let sq = Math.sqrt(num);
+    let flag = 0;
+    for(let i = 2;i <= sq;i++) {
+      if(num % i === 0) {
+        flag++;
+        break;
+      } 
+    }
+    if(flag == 0) {
+      count++;
+    }
+    if(count === 10) {
+      console.log(num);
+      break;
+    }
+    num++;
+  }
+</script>
+
+
+
+<script id="ch0105/45" >
+  let n = +prompt();
+  let m  = 0;
+  let s = 1;
+  while(1) {
+    if( n - s > 0) {
+    m += s*s;
+    n -= s;
+
+    }else {
+      m += n * s;
+      n = 0;
+    }
+
+    if (n === 0) {
+      break;
+    }
+    s++;
+  }
+  console.log(m);
+</script>
+
+
+<script id="7" >
+  let n = +prompt();
+  if(n % 7 === 0 ){
+    console.log("YES");
+  }else {
+    let b = 0;
+    let flag = 1;
+    while(1) {
+      if( Math.floor( n / (10 ** b) % 10 )===0) {
+        break;
+      }  
+      if( Math.floor( n / (10 ** b) % 10 )=== 7 ){
+        console.log("YES");
+        flag = 0;
+        break;
+      }
+      b++;
+    }
+    if(flag) {
+      console.log("NO");
+    }
+  };
+
+</script>
+
+
+<script id="sort" >
+  let arr = [];
+  arr.push( +prompt());
+  arr.push( +prompt());
+  arr.push( +prompt());
+  arr.sort((x, y) => {
+    if (x > y) {
+      return 1;
+    }else {
+      return -1;
+    }
+  });
+  console.log(arr.join(" "));
+</script>
+
+
+<script id="narcissistic" >
+  let n = +prompt();
+  let r = 0;
+  let len = n.toString().length;
+  for(let i = 1; i <= len; i++) {
+    r  +=  Math.floor((n / 10 ** (i - 1) ) % 10) ** len;
+  } 
+  if (r === n) {
+    console.log("YES");
+  }else {
+    console.log("NO");
+  }
+</script>
+
+
+<script id="narcissistics" >
+  for(let i = 0;i < 1000;i++) {
+    let len = i.toString().length;
+    let r = 0;
+    for(let j = 1; j <= len; j++) {
+      r  +=  Math.floor((i / 10 ** (j - 1) ) % 10) ** len;
+    } 
+    if (r === i) {
+      console.log(i);
+    }
+  }
+</script>
+
+<script id="palindrom" >
+  let n = +prompt();
+  let r = "";
+  let len = n.toString().length;
+  for(let i = 1; i <= len; i++) {
+    let m =  Math.floor((n / (10 ** (i - 1)) ) % 10) ;
+    r  +=  m;
+  } 
+  if (r == n) {
+    console.log("YES");
+  }else {
+    console.log("NO");
+  }
+</script>
+
+<script id="weekday" >
+  let year = +prompt();
+  let m = +prompt();
+  let y = year % 100;
+  let c = (year - y) / 100;
+  let d = 1;
+
+  let cc = 2 * (3 - c % 4);
+  let yy = Math.floor((y % 28 + y % 28 / 4) % 7);
+  let mm =Math.floor( (3.4 + (m - 3 ) % 12 * 2.6) % 7);
+  let dd = d % 7;
+  console.log(( cc + mm + yy + dd) % 7);
+</script>
+
+<script id="complete-number" >
+  let n = +prompt();
+  let sum = 0;
+  for(let j = 1; j <= n /2 ;j++){
+    if(n % j ===0){
+      sum += j;
+    }
+  }
+  if (sum === n) {
+    console.log("YES");
+  }else {
+    console.log("NO");
+  }
+
+</script>
+
+
+
+<script id="complete-numbers" >
+  let n = 1000;
+  for(let i = 1;i <= n ; i++){
+    let sum = 0;
+    for(let j = 1; j <= i/2 ;j++){
+      if(i % j ===0){
+        sum += j;
+      }
+    }
+    if (sum === i) {
+      console.log(i);
+    }
+  }
+</script>
+
+<script id="prime" >
+  let n = +prompt();
+  let flag = 1;
+  if( n === 1) flag--;
+  for(let i = 2; i <= Math.sqrt(n) ; i++) {
+    if(n % i === 0) {
+      flag--;
+      break
+    }
+  }
+  if(flag) {
+    console.log("YES");
+  }else {
+    console.log("NO");
+  }
+</script>
+<script id="primes" >
+  for(let n = 2; n < 100; n++){
+
+
+    let flag = 1;
+    for(let i = 2; i <= Math.sqrt(n) ; i++) {
+      if(n % i === 0) {
+        flag--;
+        break
+      }
+    }
+  
+  if(flag) {
+    console.log(n);
+  }
+}
+</script>
+
+<script id="itob" >
+  let n = +prompt();
+  let r = "";
+  let b = 0;
+  let sign = "";
+  if(n < 0) {
+    n = -n;
+    sign = "-";
+  }
+  while(1) {
+
+     if (Math.floor((n /( 10 ** b )))% 10 === 0 ){
+        console.log(sign + r);
+        break;
+      }
+    r = Math.floor((n /( 10 ** b )))% 10 + r;
+    b++;
+  
+  }
+</script>
+
+<script id="lcf&lcm" >
+  
+  let m = +prompt();
+  let n = +prompt();
+  let max = n;
+  let min = m;
+  if( m  > n) {
+    max = m ;
+    min = n;
+  }
+  for(let i = min; i >= 1 ; i-- ){
+    if( m % i === 0 && n % i === 0 ){
+      console.log(i);
+      break;
+    }
+  }
+  for(let i = max;; i++ ){
+    if( i % m === 0 && i % n === 0 ){
+      console.log(i);
+      break;
+    }
+  }
+
+
+</script>
+
+
+<script id="sqrt" >
+  let n = +prompt();
+  let k = 1;
+  while(Math.abs( k * k - n) > 1e-9){
+    k = (k + n / k ) / 2;
+  }
+  console.log(k.toFixed(3));
+</script>
+<script >
+let n = +prompt();
+let str = "";
+while(1) {
+  if (n === 0) {
+    console.log(str);
+    break;
+  }
+  str = n % 5  + str;
+  n = Math.floor(n / 5); 
+}
+</script>
+<script >
+  for(let i = 1;i <= 100;i++){
+    if (i % 3 === 0 && i % 5 === 0){
+      console.log("fz");
+    }else if(i % 3 === 0) {
+      console.log("f");
+    }else if (i % 5 === 0){
+      console.log("b");
+    }else {
+      console.log(i);
+    }
+  }
+</script> -->
+
+
+
+
+
 
